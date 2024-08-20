@@ -1,0 +1,74 @@
+a {
+    text-decoration: none;
+    color: #222222;
+}
+
+a:visited {
+    color: #222222;
+}
+
+body {
+    background-color: #DDCC55;
+    color: #000000;
+    font-size: 16px;
+    font-family: 'stoke', "Lucida Bright", 'liberation', serif;
+}
+
+td {
+    vertical-align: top;
+}
+
+header {
+    display: block;
+    margin-bottom: 1px;
+}
+
+nav {
+    display: block;
+    width: 20%;
+    float: left;
+}
+nav ul {
+    color: #000000;
+    line-height: 230%;
+    margin-top: 40px;
+    list-style-type: square;
+}
+
+#menu {
+    font-family: "Verdana", "Ubuntu", sans-serif;
+    font-weight: bold;
+}
+
+#menu ul {
+    list-style-type: square;
+}
+
+ul{
+    line-height: 200%;
+}
+
+.ender {
+    font-family: "Karla", "Verdana", "Ubuntu", sans-serif;
+    float: right;
+    text-align: right;
+    font-size: 14px;
+    line-height: 140%;
+    font-size: 14px;
+}
+
+.apres {
+    text-align: center;
+    font-size: 16px;
+}
+
+.imgLogo {
+    border-bottom: 3px solid #222222;
+    margin-bottom: 6px;
+    padding-bottom: 15px;
+}
+
+#main-logo {
+    font-family: "Lucida Bright", "Liberation Sans", sans-serif;
+    text-align: center;
+}
