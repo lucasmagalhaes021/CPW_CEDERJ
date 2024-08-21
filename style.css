@@ -6,6 +6,9 @@ a {
 a:visited {
     color: #222222;
 }
+h4 {
+    font-size: 14px;
+}
 
 body {
     background-color: #DDCC55;
@@ -48,6 +51,10 @@ ul{
     line-height: 200%;
 }
 
+#preco {
+    color: #CC0000;
+}
+
 .ender {
     font-family: "Karla", "Verdana", "Ubuntu", sans-serif;
     float: right;
@@ -71,4 +78,26 @@ ul{
 #main-logo {
     font-family: "Lucida Bright", "Liberation Sans", sans-serif;
     text-align: center;
+}
+
+
+.listaPlano {
+    width: 300px;
+    color: #202020;
+    background-color: #EEEEBB;
+    font-size: 12px;
+    padding: 10px 10px 10px;
+    border: 3px solid #202020;
+    margin: 0 auto 10px auto;
+    list-style-type: square; /* Para exibir itens da lista como quadrados */
+    text-align: left; /* Para centralizar o texto dentro do container */
+}
+
+.listaPlano ul {
+    list-style-type: square;
+}
+
+.listaPlano ol {
+    color: #202020;
+    list-style-type: lower-alpha;
 }
