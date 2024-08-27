@@ -246,3 +246,14 @@ ul{
 .linhaNomeCartao {
     padding-top: 8px;
 }
+
+.apres {    
+    text-align: center;
+    font-size: 16px;
+}
+
+.apres_equip { 
+    padding-top: 20px;   
+    text-align: center;
+    font-size: 16px;
+}
