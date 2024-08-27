@@ -64,10 +64,7 @@ ul{
     font-size: 14px;
 }
 
-.apres {
-    text-align: center;
-    font-size: 16px;
-}
+
 
 .imgLogo {
     border-bottom: 3px solid #222222;
@@ -100,4 +97,152 @@ ul{
 .listaPlano ol {
     color: #202020;
     list-style-type: lower-alpha;
+}
+
+
+/* Estilo da tabela */
+.tabEquip {
+    border: 1px solid black;
+    border-collapse: separate;
+    width: 510px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Estilo para o título principal da tabela */
+.tabTitulo {
+    background-color: #402020;
+    color: #FFFFFF;
+}
+
+/* Estilo para os subtítulos */
+.tabSubTit {
+    background-color: #802020;
+    color: #FFFFFF;
+}
+
+/* Estilos internos da tabela */
+.tabEquip th {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.tabEquip td {
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 12px;
+    background-color: #EEEEBB;
+}
+
+/* Estilo para a célula que contém a imagem */
+.imgCel {
+    width: 100px;
+    background-color: #FFFFFF;
+}
+
+/* Estilo para a imagem dentro da célula */
+.imgCel img {
+    width: 100px;
+    height: 100px;
+}
+
+.formul {
+    width: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto 10px auto;
+    color: #202020;
+    background-color: #EEEEBB;
+    border: 3px solid #202020;
+    font-size: 12px;
+}
+
+.fsPessoal {
+    width: 340px;
+    margin: auto;
+}
+
+.fsGenero {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.fsCartao {
+    width: 280px;
+    margin: 0 auto;
+}
+
+.linhaNome {
+    height: 30px;
+    width: 340px;
+    padding-top: 8px;
+}
+
+.linhaDados {
+    height: 130px;
+    width: 340px;
+}
+
+.ColDirMat {
+    float: right;
+}
+
+.ColEsqPes {
+    width: 70px;
+    float: left;
+    display: block;
+}
+
+.ColLabCrd {
+    width: 270px;
+    height: 30px;
+    text-align: left;
+    float: left;
+}
+
+.ColValTot {
+    padding-top: 8px;
+    width: 220px;
+    text-align: left;
+    float: left;
+    display: block;
+}
+
+.entDireita {
+    margin-right: 20px;
+    float: right;
+}
+
+.inpNome {
+    width: 220px;
+}
+
+.numDD {
+    width: 35px;
+}
+
+.numQD {
+    width: 50px;
+}
+
+.inpNCC {
+    width: 130px;
+}
+
+.inpTelef {
+    width: 90px;
+}
+
+.inpMat {
+    width: 70px;
+}
+
+.inpVal {
+    width: 50px;
+}
+
+
+.linhaNomeCartao {
+    padding-top: 8px;
 }
