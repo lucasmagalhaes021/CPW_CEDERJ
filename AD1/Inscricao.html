@@ -1,145 +1,113 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inscrição</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Halteres seus Hábitos</title>
+    <base target="_blank" />
+    <link rel="stylesheet" type="text/css" href="HalteresSeusHabitos.css" />
+    <link href='https://fonts.googleapis.com/css?family=Karla|Stoke' rel='stylesheet'>
 </head>
-<link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Stoke' rel='stylesheet'>
 
 <body>
-    <table>
-        <tr>
-            <td class="imgLogo">
-                <img src="files/HalteresSeusHabitosTopo.png" alt="Halteres Seus Hábitos Topo" />
-            </td>
-            <td rowspan="2">
-                <section>
-                    <address class="ender">
-                        Estrada do Puxa Ferro, 12<br />
-                        Tel: (21) 91234-5678<br />
-                        <a href="mailto:contato@halterhabit.com.br">contato@halterhabit.com.br</a>
-                    </address>
-                </section>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            </td>
-        </tr>
-        <tr>
-            <td id="menu">
-                <section>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="index.html" target="_blank">Apresentação</a>
-                            </li>
-                            <li>
-                                <a href="Planos.html" target="_blank">Planos</a>
-                            </li>
-                            <li>
-                                <a href="Equipamentos.html" target="_blank">Equipamentos</a>
-                            </li>
-                            <li>
-                                <a href="Inscricao.html" target="_blank">Inscrição</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </section>
-            </td>
-            <td>
-                <section>
-                    <form  class="formul">
-                        <fieldset class="fsPessoal">
-                            <legend>Dados Pessoais</legend>
-                            <div class="linhaNome">
-                                <label for="nome">Nome:</label>
-                                <input type="text" id="nome" class="inpNome">
-                            </div>
-                            <div class="linhaDados">
-                                <div class="ColEsqPes">
-                                    <div class="linhaNome">
-                                        <label for="telefone">Telefone:</label>
-                                        <input type="text" id="telefone" class="inpTelef">
-                                    </div>
-                                    <div class="linhaNome">
-                                        <label for="celular">Celular:</label>
-                                        <input type="text" id="celular" class="inpTelef">
-                                    </div>
-                                    <div class="linhaNome"> <label for="idade">Idade:</label>
-                                        <input type="number" id="idade" class="numDD" value="18">
-                                    </div>
-                                </div>
-                                <fieldset class="fsGenero">
-                                    <legend>Gênero</legend>
-                                    <label><input type="radio" name="genero" value="Masculino"> Masculino</label><br>
-                                    <label><input type="radio" name="genero" value="Feminino" checked>
-                                        Feminino</label><br>
-                                    <label><input type="radio" name="genero" value="Outro"> Outro</label>
-                                </fieldset>
-                            </div>
+    <header>
+        <address class="ender">
+            Estrada do Puxa Ferro, 12<br />
+            Tel: (21) 91234-5678<br />
+            <a href="mailto:contato@halterhabit.com.br">
+                contato@halterhabit.com.br</a>
+        </address>
+        <img class="imgLogo" src="files/HalteresSeusHabitosTopo.png" />
+        <br>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="HalteresSeusHabitos.html">Apresentação</a></li>
+            <li><a href="Planos.html">Planos</a></li>
+            <li><a href="Equipamentos.html">Equipamentos</a></li>
+            <li><a href="Inscricao.html">Inscrição</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h3 class="Titulo">Inscrição</h3>
+        <form method="POST">
+            <div class="formul">
+                <fieldset class="fsPessoal">
+                    <legend> Dados Pessoais</legend>
+                    <div class="linhaNome">
+                        <label for="nome" class="ColEsqPes">Nome: </label>
+                        <input type="text" class="inpNome" id="nome" name="TxtNome">
+                    </div>
+                    <div class="linhaDados">
+                        <fieldset class="fsGenero">
+                            <legend> Genero</legend>
+                            <input type="radio" name="TglGenero" value="M">
+                            Masculino<br />
+                            <input type="radio" checked name="TglGenero" value="F">
+                            Feminino<br />
+                            <input type="radio" name="TglGenero" value="O"> Outro<br />
                         </fieldset>
-
-                        <fieldset class="fsPessoal">
-                            <legend>Matrícula</legend>
-                            <div class="linhaNome">
-                                <label>Matriculado? <input type="checkbox" id="matriculado"></label>
-                                <label for="telefone">Número: <input type="text" id="numero" class="inpMat"></label>
-                            </div>
-                            <div class="linhaDados">
-                                <label for="atividade">Atividade:</label>
-                                <select id="atividade">
-                                    <option>--</option>
-                                    <option>Atividade 1</option>
-                                    <option>Atividade 2</option>
-                                </select>
-                                <label for="plano">Plano:</label>
-                                <select id="plano">
-                                    <option>--</option>
-                                    <option>Plano 1</option>
-                                    <option>Plano 2</option>
-                                </select>
-                                <fieldset>
-                                    <legend>Cartão</legend>
-                                    <div>
-                                        <label>Bandeira:</label>
-                                        <label><input type="radio" name="bandeira" value="Visa" checked> Visa</label>
-                                        <label><input type="radio" name="bandeira" value="Master"> Master</label>
-                                        <label><input type="radio" name="bandeira" value="Elo"> Elo</label>
-                                    </div>
-                                    <div class="linhaNomeCartao">
-                                        <label for="validade">Validade:</label>
-                                        <input type="number" id="mes" class="numDD" value="10">
-                                        <label>/</label>
-                                        <input type="number" id="ano" class="numQD" value="2024">
-                                    </div>
-                                    <div class="linhaNomeCartao">
-                                        <label for="numero">Número:</label>
-                                        <input type="text" id="numeroCartao" class="inpNCC">
-                                    </div>
-                                </fieldset>
-                                
-                                <div class="ColValTot">
-                                    <label for="valor">Valor: R$</label>
-                                    <input type="text" id="valor" class="inpVal">
-                                </div>
-                            </div>
-                        </fieldset>
-                        <div class="entDireita">
-                            <div>
-                                <button type="submit">Enviar</button>
-                                <button type="reset">Limpar</button>
-                            </div>
-                        </div>
-                    </form>
-                </section>
-            </td>
-        </tr>
-    </table>
+                        <br /><label for="tel" class="ColEsqPes">Telefone: </label>
+                        <input type="tel" class="inpTelef" id="tel" name="TxtTelefone" /><br />
+                        <br /><label for="cel" class="ColEsqPes">Celular: </label>
+                        <input type="tel" class="inpTelef" id="cel" name="TxtCelular" /><br />
+                        <br /><label for="idade" class="ColEsqPes">Idade:</label>
+                        <input type="number" class="numDD" id="idade" name="TxtIdade" min="18" max="88" value="18"
+                            /><br />
+                    </div>
+                </fieldset>
+                <fieldset class="fsPessoal">
+                    <legend> Matrícula</legend>
+                    <div class="linhaNome">
+                        <label for="mat">Matrículado?
+                            <input type="checkbox" name="chkMatric" value="S" id="mat" /></label>
+                        <label for="mat" class="ColDirMat">Número:
+                            <input type="text" class="inpMat" id="mat" name="TxtMatricula" />
+                    </div>
+                    <div class="linhaNome">
+                        <label for="ativ">Atividade:
+                            <select>
+                                <option> ----- </option>
+                                <option>Academia</option>
+                                <option>Natação</option>
+                                <option>Combo</option>
+                            </select> </label>
+                        <label for="plano" class="ColDirMat">Plano:
+                            <select>
+                                <option> ----- </option>
+                                <option>Anual</option>
+                                <option>Semestral</option>
+                                <option>Mensal</option>
+                            </select> </label>
+                    </div>
+                    <fieldset>
+                        <legend> Cartão</legend>
+                        <label class="colLabCrd">Bandeira:
+                            <label><input type="radio" name="RadBand" checked />Visa</label>
+                            <label><input type="radio" name="RadBand" />Master</label>
+                            <label><input type="radio" name="RadBand" />Elo</label>
+                        </label><br />
+                        <label class="colLabCrd" for="mesVal">Validade:
+                            <input type="number" name="TxtMesVal" id="mesVal" min="1" max="12" class="numDD"
+                                value="10" /> /
+                            <input type="number" name="TxtAnoVal" value="2024" min="2023" max="2040"
+                                class="numQD" /></label><br />
+                        <label class="colLabCrd" for="numCar">Número:
+                            <input type=text name="TxtNumCard" class="inpNCC" id="numCar" /></label><br />
+                    </fieldset>
+                    <div class="linhaNome">
+                        <input type="button" value="Matrícula+Plano">
+                        <label for="TxtTotal" class="ColDirMat">Valor: R$
+                            <input type="text" name="TxtTotal" readonly id="TxtTotal" class="inpVal" /></label>
+                    </div>
+                </fieldset>
+                <p class="entDireita">
+                    <input type="submit" value="Enviar" name="BtnEnviar">
+                    <input type="reset" value="Limpar" name="BtnLimpar">
+                </p>
+                <br><br>
+            </div>
+        </form>
+    </section>
 </body>
 
 </html>

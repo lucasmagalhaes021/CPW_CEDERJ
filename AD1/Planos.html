@@ -1,110 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Planos</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Halteres seus Hábitos</title>
+    <base target="_blank" />
+    <link rel="stylesheet" type="text/css" href="HalteresSeusHabitos.css" />
+    <link href="https://fonts.googleapis.com/css?family=Karla|Stoke" rel="stylesheet" />
 </head>
-<link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Stoke' rel='stylesheet'>
 
 <body>
-    <table>
-        <tr>
-            <td class="imgLogo">
-                <img src="files/HalteresSeusHabitosTopo.png" alt="Halteres Seus Hábitos Topo" />
-            </td>
-            <td rowspan="2">
-                <section>
-                    <address class="ender">
-                        Estrada do Puxa Ferro, 12<br />
-                        Tel: (21) 91234-5678<br />
-                        <a href="mailto:contato@halterhabit.com.br">contato@halterhabit.com.br</a>
-                    </address>
-                </section>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            </td>
-        </tr>
-        <tr>
-            <td id="menu">
-                <section>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="index.html" target="_blank">Apresentação</a>
-                            </li>
-                            <li>
-                                <a href="Planos.html" target="_blank">Planos</a>
-                            </li>
-                            <li>
-                                <a href="Equipamentos.html" target="_blank">Equipamentos</a>
-                            </li>
-                            <li>
-                                <a href="Inscricao.html" target="_blank">Inscrição</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </section>
-            </td>
-            <td>
-                <section class="apres">
-                    <h3>Planos (<span id="preco">valor Mensal</span>)</h3>
-                    <div>
-                        <table class="listaPlano">
-                            <tr>
-                                <td>
-                                    <ul>
-                                        <li>
-                                            Academia:
-                                        </li>
-                                        <ol>
-                                            <li>Anual (R$ <span id="preco">180,00</span>)</li>
-                                            <li>Semestral (R$ <span id="preco">220,00</span>)</li>
-                                            <li>Mensal (R$ <span>260,00</span>)</li>
-                                        </ol>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <ul>
-                                        <li>
-                                            Natação (3x semana):
-                                        </li>
-                                        <ol>
-                                            <li>Anual (R$ <span id="preco">300,00</span>)</li>
-                                            <li>Semestral (R$ <span id="preco">340,00</span>)</li>
-                                            <li>Mensal (R$ <span id="preco">380,00</span>)</li>
-                                        </ol>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <ul>
-                                        <li>
-                                            Combo (academia + natação):
-                                        </li>
-                                        <ol>
-                                            <li>Anual (R$ <span id="preco">330,00</span>)</li>
-                                            <li>Semestral (R$ <span id="preco">390,00</span>)</li>
-                                            <li>Mensal (R$ <span id="preco">440,00</span>)</li>
-                                        </ol>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <h4>Matrícula Obrigatória: <span id="preco">R$80,00</span></h4>
-                </section>
-            </td>
-        </tr>
-    </table>
+    <header>
+        <address class="ender">
+            Estrada do Puxa Ferro, 12<br />
+            Tel: (21) 91234-5678<br />
+            <a href="mailto:contato@halterhabit.com.br">
+                contato@halterhabit.com.br</a>
+        </address>
+        <img class="imgLogo" src="files/HalteresSeusHabitosTopo.png" />
+        <br />
+    </header>
+    <nav>
+        <ul>
+            <li><a href="HalteresSeusHabitos.html">Apresentação</a></li>
+            <li><a href="Planos.html">Planos</a></li>
+            <li><a href="Equipamentos.html">Equipamentos</a></li>
+            <li><a href="Inscricao.html">Inscrição</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h3 class="Titulo">Planos (<span class="preco">valor mensal</span>)</h3>
+        <ul class="listaPlano">
+            <li>
+                Academia:
+                <ol>
+                    <li>Anual (R$ <span class="preco">180,00</span>)</li>
+                    <li>Semestral (R$ <span class="preco">220,00</span>)</li>
+                    <li>Mensal (R$ <span class="preco">260,00</span>)</li>
+                </ol>
+            </li>
+            <br />
+            <li>
+                Natação (3x semana):
+                <ol>
+                    <li>Anual (R$ <span class="preco">300,00</span>)</li>
+                    <li>Semestral (R$ <span class="preco">340,00</span>)</li>
+                    <li>Mensal (R$ <span class="preco">380,00</span>)</li>
+                </ol>
+            </li>
+            <br />
+            <li>
+                Combo (academia + natação):
+                <ol>
+                    <li>Anual (R$ <span class="preco">330,00</span>)</li>
+                    <li>Semestral (R$ <span class="preco">390,00</span>)</li>
+                    <li>Mensal (R$ <span class="preco">440,00</span>)</li>
+                </ol>
+            </li>
+        </ul>
+        <h4 class="Titulo">
+            Matrícula Obrigatória: R$ <span class="preco">80,00</span>
+        </h4>
+    </section>
 </body>
 
 </html>

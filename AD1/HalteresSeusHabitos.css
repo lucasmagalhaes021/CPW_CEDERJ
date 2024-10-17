@@ -1,0 +1,235 @@
+/* 
+ *   Estilo Geral 
+ */
+body {
+    color: #000000;
+    font-size: 16px;
+    background-color: #DDCC55;
+    font-family: stoke, Lucida Bright, liberation;
+}
+
+a:link {
+    color: #222222;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #222222;
+    text-decoration: none;
+}
+
+ol {
+    line-height: 200%;
+}
+
+ul {
+    line-height: 200%;
+}
+
+/* 
+ *   Estilo Nav 
+ */
+nav ul {
+    color: #000000;
+    margin-top: 40px;
+    line-height: 230%;
+    list-style-type: square;
+}
+
+/* 
+ *   Estilo Header 
+ */
+.ender {
+    float: right;
+    text-align: right;
+    font-size: 14px;
+    line-height: 140%;
+    font-family: karla, verdana, ubuntu;
+}
+
+img.imgLogo {
+    padding-bottom: 15px;
+    border-bottom: 3px solid #222222;
+    margin-bottom: 6px;
+}
+
+/*************************************** 
+ *   Estilo Seção Apresentação 
+ */
+div.apres {
+    text-align: center;
+    font-size: 16px;
+}
+
+/*************************************** 
+*   Estilo Seção Planos 
+*/
+.Titulo {
+    text-align: center;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+.listaPlano {
+    width: 300px;
+    color: #202020;
+    font-size: 12px;
+    border: 3px solid #202020;
+    margin: 0px auto 10px auto;
+    padding: 10px 10px 10px 30px;
+    background-color: #EEEEBB;
+    list-style-type: square;
+}
+
+.listaPlano ol {
+    color: #202020;
+    list-style-type: lower-alpha;
+}
+
+.preco {
+    color: #CC0000;
+}
+
+/*************************************** 
+*   Estilo Seção Equipamentos 
+*/
+table.tabEquip {
+    width: 510px;
+    border: 1px solid;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border-collapse: separate;
+}
+
+table.tabEquip td,
+table.tabEquip th {
+    padding: 10px;
+    border: 1px solid;
+}
+
+table.tabEquip td {
+    font-size: 12px;
+    background-color: #EEEEBB;
+}
+
+th.tabTitulo {
+    color: #FFFFFF;
+    background-color: #402020;
+}
+
+th.tabSubTit {
+    color: #FFFFFF;
+    background-color: #802020;
+}
+
+.tabEquip .imgCel {
+    width: 100px;
+    background-color: #FFFFFF;
+}
+
+.imgCel img {
+    width: 100px;
+    height: 100px;
+}
+
+/*************************************** 
+*   Estilo Formulários 
+*/
+.formul {
+    width: 400px;
+    color: #202020;
+    font-size: 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px auto 10px auto;
+    border: 3px solid #202020;
+    background-color: #EEEEBB;
+}
+
+.fsPessoal {
+    width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.linhaNome {
+    height: 30px;
+    width: 340px;
+    padding-top: 8px;
+}
+
+.linhaDados {
+    width: 340px;
+    height: 130px;
+}
+
+.fsGenero {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.fsCartao {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inpNome {
+    width: 220px;
+}
+
+.ColDirMat {
+    float: right;
+}
+
+.ColEsqPes {
+    float: left;
+    width: 70px;
+    display: block;
+}
+
+.numDD {
+    width: 35px;
+}
+
+.numQD {
+    width: 50px;
+}
+
+.inpNCC {
+    width: 130px;
+}
+
+.inpTelef {
+    width: 90px;
+}
+
+.inpMat {
+    width: 70px;
+}
+
+.inpVal {
+    width: 50px;
+}
+
+.colLabCrd {
+    width: 270px;
+    height: 30px;
+    float: left;
+    text-align: left;
+}
+
+.colValTot {
+    float: left;
+    width: 220px;
+    display: block;
+    text-align: left;
+}
+
+.entDireita {
+    float: right;
+    margin-right: 20px;
+}
