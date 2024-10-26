@@ -5,7 +5,8 @@
     <title>Halteres seus Hábitos</title>
     <base target="_blank" />
     <link rel="stylesheet" type="text/css" href="HalteresSeusHabitos.css" />
-    <link href="https://fonts.googleapis.com/css?family=Karla|Stoke" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Karla|Stoke" rel="stylesheet"/>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -31,7 +32,7 @@
         <h3 class="Titulo">Planos (<span class="preco">valor mensal</span>)</h3>
         <ul class="listaPlano">
             <li>
-                Academia:
+                <a onclick="MudaJanela('Academia'); return false;">Academia:</a> 
                 <ol>
                     <li>Anual (R$ <span class="preco">180,00</span>)</li>
                     <li>Semestral (R$ <span class="preco">220,00</span>)</li>
@@ -40,7 +41,7 @@
             </li>
             <br />
             <li>
-                Natação (3x semana):
+                <a onclick="MudaJanela('Natacao'); return false;">Natação (3x semana):</a> 
                 <ol>
                     <li>Anual (R$ <span class="preco">300,00</span>)</li>
                     <li>Semestral (R$ <span class="preco">340,00</span>)</li>
@@ -49,7 +50,7 @@
             </li>
             <br />
             <li>
-                Combo (academia + natação):
+                <a onclick="MudaJanela('Combo'); return false;">Combo (academia + natação):</a> 
                 <ol>
                     <li>Anual (R$ <span class="preco">330,00</span>)</li>
                     <li>Semestral (R$ <span class="preco">390,00</span>)</li>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Halteres seus Hábitos</title>
+    <base target="_blank" />
+    <link rel="stylesheet" type="text/css" href="HalteresSeusHabitos.css" />
+    <link href="https://fonts.googleapis.com/css?family=Karla|Stoke" rel="stylesheet"/>
+    <script src="script.js"></script>
+    <script>
+        // Função para ler os parâmetros da URL
+        function getParams() {
+            const params = new URLSearchParams(window.location.search);
+            document.querySelector('.Titulo').textContent = params.get('titulo') || '{titulo}';
+            document.querySelector('.preco').textContent = params.get('descricao') || '{descricao}';
+            document.querySelectorAll('.preco')[1].textContent = params.get('valorAnual') || '{valorAnual}';
+            document.querySelectorAll('.preco')[2].textContent = params.get('valorSemestral') || '{valorSemestral}';
+            document.querySelectorAll('.preco')[3].textContent = params.get('valorMensal') || '{valorMensal}';
+
+            // Carregar a imagem usando a URL
+            const imgSource = params.get('imgSource');
+            if (imgSource) {
+                document.querySelector('.imgWindow').src = `files/${imgSource}`; // Ajuste a URL da imagem
+            }
+        }
+        window.onload = getParams;
+    </script>
+</head>
+
+<body>
+    <header>
+        <address class="ender">
+            Estrada do Puxa Ferro, 12<br />
+            Tel: (21) 91234-5678<br />
+            <a href="mailto:contato@halterhabit.com.br">
+                contato@halterhabit.com.br</a>
+        </address>
+        <img class="imgLogo" src="files/HalteresSeusHabitosTopo.png" />
+        <br />
+    </header>
+    <nav>
+        <ul>
+            <li><a href="HalteresSeusHabitos.html">Apresentação</a></li>
+            <li><a href="Planos.html">Planos</a></li>
+            <li><a href="Equipamentos.html">Equipamentos</a></li>
+            <li><a href="Inscricao.html">Inscrição</a></li>
+        </ul>
+    </nav>
+    <section class="centralizar">
+        <h3 class="Titulo">{titulo}</h3>
+        <h3 class="Titulo">(<span class="preco">{descricao}</span>)</h3>
+        <img class="imgWindow" src="files/Academia.png"> <!-- Mantenha uma imagem padrão -->
+        <ol class="teste">
+            <li>Anual (R$ <span class="preco">{valorAnual}</span>)</li>
+            <li>Semestral (R$ <span class="preco">{valorSemestral}</span>)</li>
+            <li>Mensal (R$ <span class="preco">{valorMensal}</span>)</li>
+        </ol>
+        <button type="button" value="Fechar" onclick="MudaJanela('Planos')">Fechar</button>
+    </section>
+</body>
+</html>
