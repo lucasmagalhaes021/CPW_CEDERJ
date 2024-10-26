@@ -6,6 +6,7 @@
     <base target="_blank" />
     <link rel="stylesheet" type="text/css" href="HalteresSeusHabitos.css" />
     <link href='https://fonts.googleapis.com/css?family=Karla|Stoke' rel='stylesheet'>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -46,13 +47,14 @@
                             Feminino<br />
                             <input type="radio" name="TglGenero" value="O"> Outro<br />
                         </fieldset>
-                        <br /><label for="tel" class="ColEsqPes">Telefone: </label>
-                        <input type="tel" class="inpTelef" id="tel" name="TxtTelefone" /><br />
-                        <br /><label for="cel" class="ColEsqPes">Celular: </label>
-                        <input type="tel" class="inpTelef" id="cel" name="TxtCelular" /><br />
+                        <br />
+                        <label for="tel" class="ColEsqPes">Telefone: </label>
+                        <input type="tel" class="inpTelef" id="tel" name="TxtTelefone" onchange="validarTelefone(event)" /><br/>
+                        <br>
+                        <label for="cel" class="ColEsqPes">Celular: </label>
+                        <input type="tel" class="inpTelef" id="cel" name="TxtCelular" onchange="validarTelefone(event)" /><br/>                    
                         <br /><label for="idade" class="ColEsqPes">Idade:</label>
-                        <input type="number" class="numDD" id="idade" name="TxtIdade" min="18" max="88" value="18"
-                            /><br />
+                        <input type="number" class="numDD" id="idade" name="TxtIdade" min="18" max="88" value="18"/><br/>
                     </div>
                 </fieldset>
                 <fieldset class="fsPessoal">
