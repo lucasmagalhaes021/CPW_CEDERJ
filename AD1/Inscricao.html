@@ -61,24 +61,24 @@
                     <legend> Matrícula</legend>
                     <div class="linhaNome">
                         <label for="mat">Matrículado?
-                            <input type="checkbox" name="chkMatric" value="S" id="mat" /></label>
-                        <label for="mat" class="ColDirMat">Número:
-                            <input type="text" class="inpMat" id="mat" name="TxtMatricula" />
+                            <input type="checkbox" name="chkMatric" value="S" id="matriculado" /></label>
+                        <label for="numMat" class="ColDirMat">Número:
+                            <input type="text" class="inpMat" id="numMat" name="TxtMatricula" />
                     </div>
                     <div class="linhaNome">
                         <label for="ativ">Atividade:
-                            <select>
-                                <option> ----- </option>
-                                <option>Academia</option>
-                                <option>Natação</option>
-                                <option>Combo</option>
+                            <select id="atividade">
+                                <option value=""> ----- </option>
+                                <option value="academia">Academia</option>
+                                <option value="natacao">Natação</option>
+                                <option value="combo">Combo</option>
                             </select> </label>
                         <label for="plano" class="ColDirMat">Plano:
-                            <select>
-                                <option> ----- </option>
-                                <option>Anual</option>
-                                <option>Semestral</option>
-                                <option>Mensal</option>
+                            <select id="plano">
+                                <option value=""> ----- </option>
+                                <option value="mensal">Mensal</option>
+                                <option value="semestral">Semestral</option>
+                                <option value="anual">Anual</option>
                             </select> </label>
                     </div>
                     <fieldset>
@@ -97,7 +97,7 @@
                             <input type=text name="TxtNumCard" class="inpNCC" id="numCar" /></label><br />
                     </fieldset>
                     <div class="linhaNome">
-                        <input type="button" value="Matrícula+Plano">
+                        <input type="button" value="Matrícula+Plano" onclick="calcularValor()">
                         <label for="TxtTotal" class="ColDirMat">Valor: R$
                             <input type="text" name="TxtTotal" readonly id="TxtTotal" class="inpVal" /></label>
                     </div>

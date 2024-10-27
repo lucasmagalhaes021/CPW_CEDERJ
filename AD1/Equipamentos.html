@@ -3,9 +3,9 @@
 
 <head>
     <title>Halteres seus Hábitos</title>
-    <base target="_blank" />
     <link rel="stylesheet" type="text/css" href="HalteresSeusHabitos.css" />
     <link href="https://fonts.googleapis.com/css?family=Karla|Stoke" rel="stylesheet" />
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -29,58 +29,32 @@
     <section>
         <br />
         <table class="tabEquip">
-            <tr>
-                <th colspan="3" class="tabTitulo">Alguns dos Nossos Equipamentos</th>
-            </tr>
-            <tr>
-                <th rowspan="2" class="imgCel">
-                    <img src="files/CadeiraExtensora.png" />
-                </th>
-                <th colspan="2" class="tabSubTit">Cadeira Extensora</th>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    O principal movimento articular realizado na cadeira extensora é a
-                    extensão de joelho, portanto o quadríceps (vasto lateral, vasto
-                    medial, vasto intermédio e reto femoral são os principais músculos
-                    trabalhados durante o exercício.<a href="https://treinomestre.com.br/cadeira-extensora-como
-        potencializar-os-resultados-4-dicas-importantes/">
-                        fonte</a>]
-                </td>
-            </tr>
-            <tr>
-                <th colspan="2" class="tabSubTit">Supino Vertical</th>
-                <th rowspan="2" class="imgCel">
-                    <img src="files/SupinoVertical.png" />
-                </th>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    O supino vertical é um exercício popular e eficaz para desenvolver
-                    força, tamanho e definição nos músculos da parte superior do corpo.
-                    Ao usar uma máquina de peso guiada, este exercício oferece uma
-                    maneira acessível e controlada de direcionar os músculos do peito,
-                    ombros e tríceps. [<a href="https://www.academiacentralfitness.com.br/post/supino
-        m%C3%A1quina-como-fazer-benef%C3%ADcios-e-varia%C3%A7%C3%B5es">
-                        fonte</a>]
-                </td>
-            </tr>
-            <tr>
-                <th rowspan="2" class="imgCel">
-                    <img src="files/RemadaBaixa.png" />
-                </th>
-                <th colspan="2" class="tabSubTit">Remada Baixa de Triângulo</th>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    A Remada Baixa é um exercício de máquina para costas feito sentado
-                    no banco usando a barra triângulo. A Remada trabalha inúmeros
-                    músculos como o lombar, latíssimo do dorso, trapézio, deltoide
-                    posterior e até mesmo o braquiorradial. [<a href="https://www.hipertrofia.org/blog/2018/03/24/remada
-        baixa/">
-                        fonte</a>]
-                </td>
-            </tr>
+                <tr>
+                    <th colspan="3" class="tabTitulo">Alguns dos Nossos Equipamentos</th>
+                </tr>
+                <tr>
+                    <th class="imgEquip">
+                        <a href="#" onclick="mostrarEquipamento(0); return false">Cadeira Extensora</a>
+                    </th>
+                    <td id="ImgDes" class="imgCel" rowspan="3">
+                        <img src="files/Vazio_360.png" id="imgEquipamento" />
+                    </td>
+                    <td id="DescExe" class="descExe" rowspan="3">
+                        <h3 id="tituloEquipamento"></h3>
+                        <p id="descricaoEquipamento"></p>
+                        <a id="fonteEquipamento" href="" target="_blank"></a>
+                </tr>
+                <tr>
+                    <th class="imgEquip">
+                        <a href="#" onclick="mostrarEquipamento(1)">Supino Vertical</a>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="imgEquip">
+                        <a href="#" onclick="mostrarEquipamento(2)">Remada Baixa</a>
+                    </th>
+                </tr>
+            </table>
         </table>
     </section>
 </body>

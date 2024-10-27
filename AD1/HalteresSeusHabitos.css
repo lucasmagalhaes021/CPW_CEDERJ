@@ -1,7 +1,7 @@
 /* 
  *   Estilo Geral 
  */
-body {
+ body {
     color: #000000;
     font-size: 16px;
     background-color: #DDCC55;
@@ -94,13 +94,13 @@ h4 {
 
 /*************************************** 
 *   Estilo Seção Equipamentos 
-*/
-table.tabEquip {
+*/table.tabEquip {
     width: 510px;
     border: 1px solid;
     font-size: 14px;
     margin-bottom: 10px;
     border-collapse: separate;
+    background-color: #EEEEBB
 }
 
 table.tabEquip td,
@@ -124,14 +124,42 @@ th.tabSubTit {
     background-color: #802020;
 }
 
-.tabEquip .imgCel {
-    width: 100px;
-    background-color: #FFFFFF;
-}
 
 .imgCel img {
-    width: 100px;
-    height: 100px;
+    width: 130px; /* Ajustado para a nova largura */
+    height: 130px; /* Ajustado para a nova altura */
+
+}
+
+.tabEquip .imgCel  {
+    background-color:#FFFFFF;
+}
+
+.tabEquip .imgEquip {
+    text-align: center; /* Centraliza o conteúdo na coluna */
+    background-color: #802020;
+}
+
+/* Estilo para o link na primeira coluna */
+.tabEquip .imgEquip a {
+    color: #FFFFFF; /* Cor do link */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+.tabEquip .imgEquip a:visited {
+    color: #FFFFFF; /* Cor do link visitado */
+}
+
+.tabEquip .imgEquip a:hover {
+    color: #FFEE88; /* Cor quando o cursor está sobre o link */
+}
+
+/* Estilo para a descrição do equipamento */
+#DescExe {
+    width: 250px; /* Largura definida */
+    height: 230px; /* Altura definida */
+    text-align: justify; /* Justifica o texto */
+    vertical-align: top; /* Alinha o texto ao topo da célula */
 }
 
 /*************************************** 
@@ -232,17 +260,4 @@ th.tabSubTit {
 .entDireita {
     float: right;
     margin-right: 20px;
-}
-
-.imgWindow{
-    display: block; 
-    margin: auto;
-    width: 200px;
-}
-
-.centralizar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
